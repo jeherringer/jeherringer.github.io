@@ -1,0 +1,312 @@
+body {
+    background: #F8F8FF
+    
+}
+
+nav {
+    height: 75px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    background: #464845;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 1.8em;
+    color: #F8F8FF;
+    position: relative;
+    top: 20px;
+}
+
+.socialA {
+    margin-right: 20px;
+    color: black;
+}
+
+.spacer {
+    height: 75px;
+    width: 100%;
+}
+
+#aboutButton {
+    color: #1c560f;
+}
+
+#projectButton {
+    padding-top: 150px;
+    color: #1c560f;
+}
+
+#page1{
+    height: 1200px;
+}
+#page2 {
+    height: 1200px;
+    z-index: 1;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    font-family: 'Maven Pro', cursive;
+    /* Carrois Gothic SC, Maven Pro, Advent Pro */
+}
+#page2 h1 {
+    font-family: 'Patrick Hand';
+}
+#page2 #about {
+    width: 50%;
+    float: right;
+    line-height: 1.5em;
+}
+#profilePic {
+    width: 50%;
+    float: left;
+    margin-top: 150px;
+}
+#page2 img {
+    
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+
+}
+
+#page3 {
+    height: 1200px;
+    text-align: center; 
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Maven Pro', monospace;
+}
+
+#page3 h1 {
+    font-family: 'Patrick Hand';
+}
+
+
+#page4 {
+    height: 1200px;
+}
+
+#projectsLeft {
+    width: 48%;
+    float: left;
+    margin-right: 10px;
+}
+
+#projectsRight {
+    width: 48%;
+    float: left;
+    margin-left: 10px;
+}
+
+#page1 i {
+    position: relative;
+    top: 70%;
+    left: 48.5%;
+}
+
+#page2 i {
+    position: relative;
+    top: 10%;
+    
+}
+
+#homeLink {color: #F8F8FF;}      
+#homeLink:visited {color:#F8F8FF;}  
+#homeLink:hover {color:#058d6b;}  
+#homeLink:active {color:#058d6b;}  
+
+#bioLink {color: #F8F8FF;}      
+#bioLink:visited {color:#F8F8FF;}  
+#bioLink:hover {color:#b00e0e;}  
+#bioLink:active {color:#b00e0e;}  
+
+#worksLink {color: #F8F8FF;}      
+#worksLink:visited {color:#F8F8FF;}  
+#worksLink:hover {color:#7f0499;}  
+#worksLink:active {color:#7f0499;}  
+
+#contactLink {color: #F8F8FF;}      
+#contactLink:visited {color:#F8F8FF;}  
+#contactLink:hover {color:#ff4e00;}  
+#contactLink:active {color:#ff4e00;}  
+
+.projectLink {
+    text-decoration: none;
+}
+
+.projectLink:hover {color: #1c560f};
+.projectLink:visited {color: #ff4e00};
+
+.line_break {
+    width:1000px;
+    height: 5px;
+    float: left;
+    color: black;
+    padding-top: 3px;
+    background-color: rgba(255,255,255,.5);
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+
+#page1 img {
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    margin: -137.5px 0 0 -300px;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 30s linear infinite 0s;
+    -moz-animation: imageAnimation 30s linear infinite 0s;
+    -o-animation: imageAnimation 30s linear infinite 0s;
+    -ms-animation: imageAnimation 30s linear infinite 0s;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+#page1 img:nth-child(2)  {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+#page1 img:nth-child(3) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+#page1 img:nth-child(4) {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+#page1 img:nth-child(5) {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+
+.project {
+    height: 150px;
+    margin-bottom: 10px;
+
+}
+
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@media only screen and (max-width: 601px) {
+    #aboutButton {
+        padding-top: 0px;
+        position: relative;
+        margin-bottom: 1000px;
+    }
+
+    #about {
+        font-size: .6em;
+    }
+
+    #profilePic {
+        position: relative;
+        right: 40px;
+        bottom: 100px;
+    }
+
+    #socialLinks {
+        width: 50%;
+        height: 100px;
+        position: relative;
+        right: 35px;
+        bottom: 40px;
+    }
+
+    .socialA {
+        margin-right: 15px;
+    }
+
+    #projectButton {
+        position: relative;
+        right: 40px;
+    }
+
+    .project {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    #projectsLeft {
+        width: 85%;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+    }
+
+    #projectsRight {
+        width: 85%;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+    }
+}

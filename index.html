@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>J | H</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Carrois+Gothic+SC|Federo|Gafata|Maven+Pro|PT+Sans|Rock+Salt|Source+Sans+Pro|ZCOOL+QingKe+HuangYou|Patrick+Hand" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+            <nav>
+                <a class="scroll" id="homeLink" href="#logo">HOME</a>
+                <a class="scroll" id="bioLink" href="#about">BIO</a>
+                <a class="scroll" id="worksLink" href="#projects">PROJECTS</a>
+                <audio id="hiSound" src="assets/sounds/hello-4.wav" preload="auto"></audio>
+                <a onclick="document.getElementById('hiSound').play();" class="scroll" id="contactLink" href="#contact">SAY HI</a>
+            </nav>
+
+            <div id="page1">
+                <a id="logo" class="smooth">
+                    <img id="img1" src="assets/images/logoPurple600.png" alt="Jon Herringer Logo">
+                    <img id="img2" src="assets/images/logoTeal600.png" alt="Jon Herringer Logo">
+                    <img id="img3" src="assets/images/logoGreen600.png" alt="Jon Herringer Logo">
+                    <img id="img4" src="assets/images/logoOrange600.png" alt="Jon Herringer Logo">
+                    <img id="img5" src="assets/images/logoRed600.png" alt="Jon Herringer Logo">
+                </a>
+            </div>
+
+            
+
+            <div id="page2">
+                <div id="profilePic">
+                    <img src="assets/images/Overlooking Future Cropped.jpg" alt="Painting of Jon Herringer">
+                </div>
+                <div id="about">
+                        <h1> A Little About Me! </h1>
+                        <hr>
+                        <p>Hi! My name is Jon Herringer and I am a full-stack web developer! I am interested in every aspect of building an application or website from
+                            beginning to end.. I greatly enjoy working with others to accomplish well-rounded, interactive webpages and applications.
+                        </p>
+                            <p> My skills include; Databases (MySQL, MongoDB, postgreSQL, and sqlite), Server Side Development (Node.js, Express, MERN Stack), 
+                            Browser Based Technologies (HTML, CSS, JavaScript, jQuery, Bootstrap), Deployment (Heroku, Git), Java, Quality Assurance (Writing Tests), 
+                            and Internet Marketing (SEO, Semantic HTML). I also have experience using design programs such as; Balsamiq, Sketch, Photoshop, and Krita.
+                            </p>
+                </div>
+                <div id="socialLinks">
+                    <a href="https://github.com/jeherringer" class="socialA" id="socialGit" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/jon-herringer-509806164/" class="socialA" id="socialLink" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.instagram.com/basecamp_designed/" class="socialA" id="socialInsta" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            
+            <div id="page3">
+                <a id="projects">
+                    <h1> Here are a few projects that I have worked on! </h1>
+                    <hr class="hrStyle">
+                    <div id="projectsLeft">
+                        <div class="project">
+                            <h2>Trivia-Brew</h2>
+                            <p>This group application is integrated with multiple API's (Google Maps, Google Places, and a trivia API) in an attempt to get friends together at 
+                            various different breweries, pubs, bars, etc to enjoy a game of trivia. The application will take in your location and display nearby places to get a drink,
+                            give you directions, and then start a game of trivia when you get to your location!
+                            </p>
+                            <a class="projectLink" href="https://github.com/KevMonahan/Trivia-Brew" target="_blank">Check out the code here!</a>
+                        </div>
+                        <div class="project">
+                            <h2>Quill IMS</h2>
+                            <p>
+                            An inventory management application with secured login using and back-end database. We used SHA256 and salt to protect user passwords, HTML/CSS/Bootstrap
+                            for the front-end, MySQL/Sequelize for the database, Express for data modeling, as well as Node.
+                            </p>
+                            <a class="projectLink" href ="https://github.com/samanthapre/Project2_inventoryManagement" target="_blank">Check out the code here!</a>
+                        </div>
+                        <div class="project">
+                                <h2>Jj's Build Bot | A Discord Bot</h2>
+                                <p>
+                                    I started working on this bot for a online game community I am a part of to help people within the community create and save character builds quickly and easily.
+                                    This bot utilizes javascript and a backend database to store, display, erase, and suggest certain character abilities and builds. For the backend I built a bot 
+                                    with both postgreSQL and sqlite. For the current iteration I stayed with postgreSQL but I'm in the middle of transitioning to sqlite as it makes more sense for my 
+                                    application.
+                                </p>
+                                <a class="projectLink" href="https://github.com/jeherringer/Jj-s-Build-Bot">Check out the code here!</a>
+                            </div>
+                    </div>
+
+                    <div id="projectsRight">
+                        <div class="project">
+                            <h2>Train Scheduler | A firebase application</h2>
+                            <p>This application utilizes Firebase as a back-end database along with Javascript and jQuery to schedule trains, input new trains, calculate future arrivals
+                            and how far away those arrivals are.
+                            </p>
+                            <a class="projectLink" href="https://jeherringer.github.io/unit-7-firebase/" target="_blank">Check out the deployed page here! | </a>
+                            <a class="projectLink" href="https://github.com/jeherringer/unit-7-firebase" target="_blank">Check out the code here!</a>
+                        </div>
+                        <div class="project">
+                            <h2>The Superhero Place | An API application</h2>
+                            <p>One of my favorite projects that I've worked on, this application utilizes multiple AJAX calls to display top gifs and information on any superhero.
+                            I used HTML/CSS for the front-end, Javascript/jQuery for the back end, and AJAX to make GET calls to two API's for information before displaying them on the page.
+                            | CORS is required for the second API call to recieve Superhero information
+                            </p>
+                            <a class="projectLink" href="https://jeherringer.github.io/unit-6-ajax/" target="_blank">You can check out the application here! | </a>
+                            <a class="projectLink" href="https://github.com/jeherringer/unit-6-ajax" target="_blank">You can check out the code here!</a>
+                        </div>
+                        <div class="project">
+                            <h2>Liri | A node application</h2>
+                            <p>
+                                Liri is a node application I used to search Twitter,OMDB, and Spotify for tweets, movies, and songs respectively. Utilizing Javascript, node, and multiple functions
+                                to make calls to these API's yields a cool little application. It also gave me some great problem solving practice in figuring out how to make searches with multiple
+                                words or characters seperated by spaces without throwing errors. 
+                            </p>
+                            <a class="projectLink" href="https://github.com/jeherringer/liri-node-app" target="_blank">You can check out the code here!</a>
+                        </div>
+                        <div class="project">
+                            <h2>Bamazon | A node/mySQL application</h2>
+                            <p>
+                                This application uses Inquirer/mySQL along with node to create a virtual storefront. Gaining practice creating and linking a SQL database, as well as seeding and filling 
+                                that database, along with playing around with Inquirer made this a very fun little application. With an added difficulty layer of sending information and logs to a virtual 
+                                "Sale Department" this became a nice, well-rounded small scale application.
+                            </p>
+                            <a class="projectLink" href="https://github.com/jeherringer/HW-BamazonCustomer" target="_blank">You can check out the code here!</a>
+                        </div>
+                    </div>
+                    
+                    
+
+                </a>
+            </div>
+            <!--
+            <div id="page4">
+                <a id="contact"> 
+                    <h1>You can contact me at any of the following places</h1>
+
+                    <ul>
+                        <p>Email me at: basecampdesigned@gmail.com</p>
+                        <p>Connect with me on Linkedin at: Jon Herringer</p>
+                        <p>Check out my Instagram works at: basecamp_designed</p>
+                    </ul>
+                        
+                </a> 
+            </div>
+            -->
+
+    </div>
+</body>
+</html>
+
+ 
