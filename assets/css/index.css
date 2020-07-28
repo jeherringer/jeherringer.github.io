@@ -107,6 +107,10 @@ nav a {
     margin-left: 10px;
 }
 
+#sunnySide {
+    margin-bottom: 10px;
+}
+
 #page1 i {
     position: relative;
     top: 70%;
